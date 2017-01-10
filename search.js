@@ -29,6 +29,5 @@ function searchLiveVideos() {
     $.each(response.items, function(i, item){
        $('#videos').html($('#videos').html() + "<div class=\"embed-responsive embed-responsive-16by9\"><iframe class=\"embed-responsive-item\" width=\"420\" height=\"315\" src=\"https://www.youtube.com/embed/"+ item.id.videoId +"\"></iframe></div>");
     });
-    console.log(response);
   });
 }
